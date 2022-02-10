@@ -35,7 +35,7 @@ html{
 /* all similar content styling codes */
 
 section{
-    padding: 100px 0;
+    padding: 75px 0;
 }
 
 .max-width{
@@ -44,7 +44,7 @@ section{
     margin: auto;
 }
 
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .services, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -312,62 +312,6 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-
-.services, .teams{
-    color:white;
-    background: #111;
-}
-
-.services .title::before,
-.teams .title::before{
-    background: white;
-}
-
-.services .title::after,
-.teams .title::after{
-    background: #111;
-    content: "prototypes";
-}
-
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.services .serv-content .card:hover{
-    background: #9339dd;
-}
-
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-
-.services .serv-content .card i{
-    font-size: 50px;
-    color: #9339dd;
-    transition: color 0.3s ease;
-}
-
-.services .serv-content .card:hover i{
-    color: black;
-}
-
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
 /* skills section styling */
 
 .skills{
@@ -482,14 +426,14 @@ section .title::after{
     width: 55%;
 }
 
-/* teams section styling */
+/* services section styling */
 
-.teams .title::after{
+.services .title::after{
     content: "My Works";
 }
 
-.teams .carousel .card{
-    background: #222;
+.services .carousel .card{
+    background: rgb(230, 229, 229);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -497,11 +441,11 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover{
+.services .carousel .card:hover{
     background: #9339dd;
 }
 
-.teams .carousel .card .box{
+.services .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -509,26 +453,26 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover .box{
+.services .carousel .card:hover .box{
     transform: scale(1.05);
 }
 
-.teams .carousel .card .text{
-    font-size: 25px;
+.services .carousel .card .text{
+    font-size: 1.4rem;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.teams .carousel .card img{
+.services .carousel .card img{
     height: 150px;
-    width: 150px;
+    width: 250px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #9339dd;
+    border-radius: 14px;
+    /* border: 5px solid #9339dd; */
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover img{
+.services .carousel .card:hover img{
     border-color: white;
 }
 
@@ -713,7 +657,7 @@ footer span a:hover{
 
 @media (max-width: 1000px) {
     .home {
-        background: url("images/phn.png");
+        background: url("images/phn.jpg");
     }
 }
 
