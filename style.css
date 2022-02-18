@@ -54,8 +54,7 @@ section{
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 section .title{
@@ -520,9 +519,9 @@ section .title::after{
     background-color: white;
 }
 
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
+/* .contact .contact-content .column{
+    width: calc(22% - 1.15px);
+} */
 
 .contact .contact-content .text{
     font-size: 20px;
